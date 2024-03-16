@@ -1,36 +1,21 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# PokeApp
 
-## Getting Started
+Twoim zadaniem jest stworzenie aplikacji internetowej, która będzie służyła jako wyszukiwarka Pokemonów. Aplikacja powinna umożliwiać użytkownikom przeglądanie różnych Pokemonów oraz wyszukiwanie ich po nazwie.
 
-First, run the development server:
+### Punkty realizacji:
+1. Skorzystaj z publicznego API zwanego PokeAPI (https://pokeapi.co/), aby uzyskać dane o różnych Pokemonach. Możesz użyć odpowiednich zapytań do pobrania informacji o Pokemonach na podstawie ich nazwy.
+2. Stwórz interfejs użytkownika w React, który umożliwi użytkownikom wprowadzenie nazwy Pokemonów do wyszukania.
+3. Po wprowadzeniu nazwy Pokemona i naciśnięciu przycisku lub klawisza Enter, aplikacja powinna wyświetlić informacje o znalezionym Pokemonie, takie jak jego typ(y), zdjęcie, statystyki, umiejętności itp.
+4. Przygotuj również listę wszystkich Pokemonów, którą użytkownik może przeglądać. Po kliknięciu na nazwę Pokemona na liście, aplikacja powinna wyświetlić informacje o tym Pokemonie.
+5. Dodaj funkcję, która umożliwi losowanie losowego Pokemona i wyświetlenie jego informacji.
+6. Zaimplementuj responsywny design, który będzie działał zarówno na urządzeniach mobilnych, jak i desktopowych.
+7. Dodaj funkcję paginacji lub nieskończonego przewijania, aby użytkownicy mogli przeglądać więcej Pokemonów.
+8. Opcjonalnie, dodaj możliwość sortowania Pokemonów według różnych kryteriów, takich jak typ, numer w Pokedexie, itp.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+### Dodatkowe Punkty:
+- Wykorzystaj hooki takie jak useState, useEffect do zarządzania stanem aplikacji i efektami ubocznymi.
+- Zaimplementuj walidację danych wejściowych, aby upewnić się, że użytkownik wprowadza poprawną nazwę Pokemona.
+- Dodaj animacje lub efekty przejścia, aby interakcja użytkownika była bardziej przyjemna.
+- Dodaj możliwość zapisywania ulubionych Pokemonów użytkownika w lokalnym magazynie.
+- Utwórz stronę szczegółów dla każdego Pokemona, na której będą wyświetlane bardziej szczegółowe informacje oraz ewentualnie lista ataków.
+- Udostępnij aplikację online za pomocą platformy takiej jak Netlify, Vercel lub GitHub Pages.
