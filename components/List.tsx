@@ -9,7 +9,7 @@ export default async function List() {
 
   return (
       <ul className="grid grid-cols-10 gap-4">
-        {pokemons.map((pokemon, index) => 
+        {pokemons.map((pokemon: any, index: number) => 
           <Link key={index} href={`/${pokemon.name}`} className="hover:underline">
             <li>
               <Image
