@@ -1,15 +1,21 @@
 'use client';
 import { useRouter } from 'next/navigation'
 import { useState } from 'react';
+import '@picocss/pico';
 
 export default function NavBar() {
   const router = useRouter();
   const [search, setSearch] = useState('');
 
+  const handleSubmit = (e: any) => {
+    e.preventDefault();
+    router.push(`/${search}`);
+  }
+
   return (
-    <nav>
-      <input type="text" placeholder="Search" onChange={(e) => setSearch(e.target.value)} value={search} className="h-full w-5/6" />
-      <button onClick={() => router.push(`/${search}`)} className="h-full w-1/6">Search</button>
-    </nav>
+      <form onSubmit={handleSubmit}>
+        <input type="text" placeholder="Search" onChange={(e) => setSearch(e.target.value)} value={search} minLength={3} maxLength={12} pattern="[A-Za-z\-]+" required/>
+        <button type='submit'>Search</button>
+      </form>
   );
 }
