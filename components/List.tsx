@@ -1,11 +1,12 @@
 import Link from "next/link";
 import Image from "next/image";
 import usePokemon from "@/functions/usePokemon";
+import Error from "@/components/Error";
 
 export default async function List() {
   const [pokemons, error] = await usePokemon();
 
-  if (error) return <h1>Error: {error.message}</h1>;
+  if (error) return <Error message={error.message} />;
 
   return (
       <ul className="grid grid-cols-10 gap-4">
