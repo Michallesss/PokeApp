@@ -15,10 +15,10 @@ export default async function usePokemon(id : Iid = undefined) {
   if (id) {
     return await instance.get(`${id}`)
     .catch((error) => [null, error])
-    .then((reponse) => [reponse.data, null]);
+    .then((reponse: any) => [reponse.data, null]);
   } else {
     return await instance.get('?offset=20&limit=1302')
     .catch((error) => [null, error])
-    .then((reponse) => [reponse.data.results, null]);
+    .then((reponse: any) => [reponse.data.results, null]);
   }
 }
