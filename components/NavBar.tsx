@@ -1,7 +1,7 @@
 'use client';
 import { useRouter } from 'next/navigation'
 import { useState } from 'react';
-// import '@picocss/pico';
+import '@picocss/pico';
 
 export default function NavBar() {
   const router = useRouter();
