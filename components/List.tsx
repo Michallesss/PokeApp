@@ -15,7 +15,7 @@ export default async function List() {
             <li className="list-none">
               <Image
                 src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${index + 1}.png`}
-                alt={index + 1}
+                alt={(index + 1).toString()}
                 width={100}
                 height={100}
               />
