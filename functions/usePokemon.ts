@@ -17,7 +17,7 @@ export default async function usePokemon(id : Iid = undefined) {
     .catch((error) => [null, error])
     .then((reponse: any) => [reponse.data, null]);
   } else {
-    return await instance.get('?offset=20&limit=1302')
+    return await instance.get('?limit=1302')
     .catch((error) => [null, error])
     .then((reponse: any) => [reponse.data.results, null]);
   }

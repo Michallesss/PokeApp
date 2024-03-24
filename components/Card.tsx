@@ -12,9 +12,6 @@ export default async function Card({ pokemon }: { pokemon: any }) {
         </p>
       </div>
       <div className="px-6 py-4">
-        {/* {
-          types.map((type: any) => (<span className="inline-block bg-grey-lighter border border-grey rounded-full px-3 py-1 text-sm font-semibold text-grey-darker mr-2">{type.name}</span>))
-        } */}
         {pokemon.types.map((type: any, index: number) => 
           <span key={index} className="inline-block bg-grey-lighter border border-grey rounded-full px-3 py-1 text-sm font-semibold text-grey-darker mr-2">{type.type.name}</span>
         )}
